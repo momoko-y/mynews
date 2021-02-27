@@ -13,7 +13,7 @@ class ProfileController extends Controller
     {
         return view('admin.profile.create');
     }
-    public function create()
+    public function create(Request $request)
     {
         // Varidationを行う
         $this->validate($request, Profile::$rules);
